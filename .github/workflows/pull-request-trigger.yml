@@ -2,7 +2,9 @@ name: Pull Request Trigger
 on:
   pull_request_target:
     types: [opened, closed]
-    branches: ['gh-pages', 'test-for-GHAs']
+    branches:
+      - 'gh-pages'
+      - 'test-for-GHAs'
 
 jobs:
   # Run an echo to confirm that the action was triggered
